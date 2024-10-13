@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education - My Portfolio</title>
+  <link rel="stylesheet" href="css/education.css">
+  <link rel="icon" type="image/png" href="img/education-icon.png">
+</head>
+<body>
+
+  <header class="header">
+    <div class="wrapper">
+       <div class="header-wrapper">
+        <div class="header-content">
+          <div class="logo">
+            <a href="/" class="logo-link">
+              <img class="logo-img" src="img/logo.svg" alt="Logo of the Site">
+              <span class="logo-name">ADILET</span>
+            </a>
+          </div>
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <li class="nav-list-item"><a href="index.html" class="nav-list-link">Home</a></li>
+              <li class="nav-list-item"><a href="family.html" class="nav-list-link">Family</a></li>
+              <li class="nav-list-item"><a href="education.html" class="nav-list-link active">Education</a></li>
+              <li class="nav-list-item"><a href="hobbies.html" class="nav-list-link">Interests</a></li>
+              <li class="nav-list-item"><a href="contact.html" class="nav-list-link">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+       </div>
+    </div>
+
+    <aside class="sidebar" id="sidebar">
+      <span class="close-btn" id="close-btn">&times;</span> 
+      <ul class="sidebar-list">
+        <li class="sidebar-item"><a href="index.html" class="sidebar-link">Home</a></li>
+        <li class="sidebar-item"><a href="family.html" class="sidebar-link">Family</a></li>
+        <li class="sidebar-item"><a href="education.html" class="sidebar-link">Education</a></li>
+        <li class="sidebar-item"><a href="hobbies.html" class="sidebar-link">Interests</a></li>
+        <li class="sidebar-item"><a href="contact.html" class="sidebar-link">Contact</a></li>
+      </ul>
+    </aside>
+</header>
+
+<main class="main">
+  <div class="wrapper">
+    <div class="main-wrapper">
+    <h1>My Education Journey</h1>
+    <section class="education-timeline">
+        <h2>Timeline of Education</h2>
+        <ul class="timeline">
+            <li>
+                <h3>School-lyceum No. 4 named after Abay (2011-2022)</h3>
+                <p> </p>
+            </li>
+            <li>
+                <h3>SDU (2022-2026)</h3>
+                <p>Bachelor's Degree in Information Systems.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="education-milestones">
+        <h2>Key Milestones</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Institution</th>
+                    <th>Achievement</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2022</td>
+                    <td>School-lyceum No. 4 named after Abay</td>
+                    <td>Graduated with Honors</td>
+                </tr>
+                <tr>
+                    <td>2026</td>
+                    <td>SDU</td>
+                    <td>Scholarship for Excellence</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="key-subjects">
+        <h2>Key Subjects Studied</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Key Subjects</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2022-2023</td>
+                    <td>Mathematics, Programming, English</td>
+                </tr>
+                <tr>
+                    <td>2023-2024</td>
+                    <td>Algorithms, Database Management Systems, Information security</td>
+                </tr>
+                <tr>
+                    <td>2024-2015</td>
+                    <td>UX/UI design, Web front</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+  </div>
+</div>
+</main>
+  
+
+  <footer class="footer">
+    <div class="wrapper">
+      <p class="footer-text">&copy; Aitzhan Adilet, 2024. All rights reserved. Confidentiality is respected.</p>
+    </div>
+  </footer>
+
+  <script>
+    const closeBtn = document.getElementById('close-btn');
+    const hamburger = document.getElementById('hamburger');
+    const sidebar = document.getElementById('sidebar');
+
+    hamburger.addEventListener('click', () => {
+        sidebar.classList.toggle('active');
+    });
+
+    closeBtn.addEventListener('click', () => {
+        sidebar.classList.remove('active');
+    });
+  </script>
+
+</body>
+</html>

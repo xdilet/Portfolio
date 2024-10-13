@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - My Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="img/home-icon.png">
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper">
+      <div class="header-wrapper">
+        <div class="header-content">
+          <div class="logo">
+            <a href="/" class="logo-link">
+              <img class="logo-img" src="img/logo.svg" alt="Logo of the Site">
+              <span class="logo-name">ADILET</span>
+            </a>
+          </div>
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <li class="nav-list-item"><a href="index.html" class="nav-list-link active">Home</a></li>
+              <li class="nav-list-item"><a href="family.html" class="nav-list-link ">Family</a></li>
+              <li class="nav-list-item"><a href="education.html" class="nav-list-link">Education</a></li>
+              <li class="nav-list-item"><a href="hobbies.html" class="nav-list-link">Interests</a></li>
+              <li class="nav-list-item"><a href="contact.html" class="nav-list-link">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <aside class="sidebar" id="sidebar">
+      <span class="close-btn" id="close-btn">&times;</span> 
+      <ul class="sidebar-list">
+        <li class="sidebar-item"><a href="index.html" class="sidebar-link">Home</a></li>
+        <li class="sidebar-item"><a href="family.html" class="sidebar-link">Family</a></li>
+        <li class="sidebar-item"><a href="education.html" class="sidebar-link">Education</a></li>
+        <li class="sidebar-item"><a href="hobbies.html" class="sidebar-link">Interests</a></li>
+        <li class="sidebar-item"><a href="contact.html" class="sidebar-link">Contact</a></li>
+      </ul>
+    </aside>
+  </header>
+
+  <main class="main">
+    <div class="wrapper">
+      <div class="main-wrapper">
+        <section class="main-content">
+          <h1 class="main-title">Welcome to My Portfolio</h1>
+          <p class="main-text">
+            Hello! My name is <strong>Aitzhan Adilet</strong>, and I am a 3rd-year student at SDU. I'm passionate about learning new technologies and expanding my skills as a front-end developer.
+          </p>
+          <p class="main-text">
+            If you have any questions, don't hesitate to reach out. You're always welcome!
+          </p>
+          <a href="https://www.wikipedia.org" class="main-button" target="_blank">Learn More</a>
+        </section>
+        <div class="main-image">
+          <img src="img/Adilet-photo.jpg" alt="Aitzhan Adilet's Photo">
+        </div>
+      </div>
+
+      <section class="skills-section">
+        <div class="wrapper">
+          <div class="skills-wrapper">
+            <article class="skills hard-skills">
+              <h2>Hard Skills</h2>
+              <ul>
+                <li><span class="dot"></span> HTML</li>
+                <li><span class="dot"></span> CSS</li>
+                <li><span class="dot"></span> Java</li>
+                <li><span class="dot"></span> C++</li>
+                <li><span class="dot"></span> Python</li>
+              </ul>
+            </article>
+            <article class="skills soft-skills">
+              <h2>Soft Skills</h2>
+              <ul>
+                <li><span class="dot"></span>Teamwork</li>
+                <li><span class="dot"></span>Responsible</li>
+                <li><span class="dot"></span>Welcome to constructive criticism</li>
+                <li><span class="dot"></span>Attention to detail</li>
+                <li><span class="dot"></span>Time management</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <p class="footer-text">&copy; Aitzhan Adilet, 2024. All rights reserved. Confidentiality is respected.</p>
+    </div>
+  </footer>
+
+  <script>
+    const closeBtn = document.getElementById('close-btn');
+    const hamburger = document.getElementById('hamburger');
+    const sidebar = document.getElementById('sidebar');
+
+    hamburger.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      sidebar.classList.remove('active');
+    });
+  </script>
+</body>
+</html>

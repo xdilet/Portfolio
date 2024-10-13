@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education - My Portfolio</title>
+  <link rel="stylesheet" href="css/hobbies.css">
+  <link rel="icon" type="image/png" href="img/hobbies-icon.png">
+</head>
+<body>
+
+  <header class="header">
+    <div class="wrapper">
+       <div class="header-wrapper">
+        <div class="header-content">
+          <div class="logo">
+            <a href="/" class="logo-link">
+              <img class="logo-img" src="img/logo.svg" alt="Logo of the Site">
+              <span class="logo-name">ADILET</span>
+            </a>
+          </div>
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <li class="nav-list-item"><a href="index.html" class="nav-list-link">Home</a></li>
+              <li class="nav-list-item"><a href="family.html" class="nav-list-link">Family</a></li>
+              <li class="nav-list-item"><a href="education.html" class="nav-list-link">Education</a></li>
+              <li class="nav-list-item"><a href="hobbies.html" class="nav-list-link active">Interests</a></li>
+              <li class="nav-list-item"><a href="contact.html" class="nav-list-link">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+       </div>
+    </div>
+
+    <aside class="sidebar" id="sidebar">
+      <span class="close-btn" id="close-btn">&times;</span> 
+      <ul class="sidebar-list">
+        <li class="sidebar-item"><a href="index.html" class="sidebar-link">Home</a></li>
+        <li class="sidebar-item"><a href="family.html" class="sidebar-link">Family</a></li>
+        <li class="sidebar-item"><a href="education.html" class="sidebar-link">Education</a></li>
+        <li class="sidebar-item"><a href="hobbies.html" class="sidebar-link">Interests</a></li>
+        <li class="sidebar-item"><a href="contact.html" class="sidebar-link">Contact</a></li>
+      </ul>
+    </aside>
+</header>
+
+<main class="main">
+  <div class="wrapper">
+      <div class="main-wrapper">
+          <section class="interests-intro">
+              <h1 class="main-title">My Interests</h1>
+              <p class="main-text">
+                  I have a wide range of interests that keep me engaged, both mentally and physically. From sports to philosophy, here’s a look at the things that I’m passionate about.
+              </p>
+          </section>
+          <section class="interests-grid">
+              <div class="interest-item">
+                  <img src="img/football.JPG" alt="Football Icon" class="interest-icon">
+                  <h2>Football</h2>
+                  <p>Football is my favorite sport. I play it regularly with friends.</p>
+              </div>
+              <div class="interest-item">
+                  <img src="img/anime.JPG" alt="Anime Icon" class="interest-icon">
+                  <h2>Anime</h2>
+                  <p>I enjoy watching anime, appreciating the creativity and unique storytelling of the medium.</p>
+              </div>
+              <div class="interest-item">
+                  <img src="img/Gym.JPG" alt="Gym Icon" class="interest-icon">
+                  <h2>GYM</h2>
+                  <p>Fitness is a big part of my life. I regularly go to the gym to maintain a healthy lifestyle.</p>
+              </div>
+              <div class="interest-item">
+                  <img src="img/serial.JPG" alt="Film Icon" class="interest-icon">
+                  <h2>Films & Serials</h2>
+                  <p>I love watching movies and TV series in my free time, always looking for new stories to explore.</p>
+              </div>
+              <div class="interest-item">
+                  <img src="img/books.JPG" alt="Books Icon" class="interest-icon">
+                  <h2>Books</h2>
+                  <p>I enjoy reading both fiction and non-fiction, especially tech-related literature and novels.</p>
+              </div>
+              <div class="interest-item">
+                  <img src="img/videogames.JPG" alt="Games Icon" class="interest-icon">
+                  <h2>Computer Games</h2>
+                  <p>Gaming is one of my favorite hobbies. It helps me relax and stay connected with friends.</p>
+              </div>
+              <div class="interest-item">
+                  <img src="img/philosophy.JPG" alt="Philosophy Icon" class="interest-icon">
+                  <h2>Philosophy</h2>
+                  <p>I enjoy reading philosophical books and discussing deep questions about life and the universe.</p>
+              </div>
+              <div class="interest-item">
+                  <img src="img/friends.JPG" alt="Friends Icon" class="interest-icon">
+                  <h2>Hanging out with Friends</h2>
+                  <p>I love spending time with friends, whether we’re watching movies or just having a good conversation.</p>
+              </div>
+              <div class="interest-item">
+                  <img src="img/chess.JPG" alt="Chess Icon" class="interest-icon">
+                  <h2>Chess</h2>
+                  <p>Playing chess helps me improve my strategic thinking and focus. It’s a great mental workout.</p>
+              </div>
+          </section>
+      </div>
+  </div>
+</main>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <p class="footer-text">&copy; Aitzhan Adilet, 2024. All rights reserved. Confidentiality is respected.</p>
+    </div>
+  </footer>
+
+  <script>
+
+    const closeBtn = document.getElementById('close-btn');
+    const hamburger = document.getElementById('hamburger');
+    const sidebar = document.getElementById('sidebar');
+
+    hamburger.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      sidebar.classList.remove('active');
+    });
+    
+  </script>
+
+</body>
+</html>

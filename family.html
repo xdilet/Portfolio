@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family - My Portfolio</title>
+  <link rel="stylesheet" href="css/family.css">
+  <link rel="icon" type="image/png" href="img/family-icon.png">
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper">
+       <div class="header-wrapper">
+        <div class="header-content">
+          <div class="logo">
+            <a href="/" class="logo-link">
+              <img class="logo-img" src="img/logo.svg" alt="Logo of the Site">
+              <span class="logo-name">ADILET</span>
+            </a>
+          </div>
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <li class="nav-list-item"><a href="index.html" class="nav-list-link">Home</a></li>
+              <li class="nav-list-item"><a href="family.html" class="nav-list-link active">Family</a></li>
+              <li class="nav-list-item"><a href="education.html" class="nav-list-link">Education</a></li>
+              <li class="nav-list-item"><a href="hobbies.html" class="nav-list-link">Interests</a></li>
+              <li class="nav-list-item"><a href="contact.html" class="nav-list-link">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+       </div>
+    </div>
+
+    <aside class="sidebar" id="sidebar">
+      <span class="close-btn" id="close-btn">&times;</span> 
+      <ul class="sidebar-list">
+        <li class="sidebar-item"><a href="index.html" class="sidebar-link">Home</a></li>
+        <li class="sidebar-item"><a href="family.html" class="sidebar-link">Family</a></li>
+        <li class="sidebar-item"><a href="education.html" class="sidebar-link">Education</a></li>
+        <li class="sidebar-item"><a href="hobbies.html" class="sidebar-link">Interests</a></li>
+        <li class="sidebar-item"><a href="contact.html" class="sidebar-link">Contact</a></li>
+      </ul>
+  </aside>
+
+  <main class="main">
+      <div class="wrapper">
+        <div class="main-wrapper">
+          <div class="main-content">
+            <h1>Adilet's Family</h1>
+            <div class="family-description">
+              <div class="family-photo">
+                <img src="img/family.webp" alt="Adilet's family Photo" class="family-pic">
+              </div>
+
+              <div class="family">
+                <blockquote>
+                  "Family is the most important value in life, a source of inspiration and a safe haven where you are always welcome. Close people become a support, support and help to achieve the desired heights."
+                </blockquote>
+                <p>
+                  There are 5 people in my family: my mom, dad, me and two younger brothers. Mom has always been a source of inspiration 
+                  and support, she taught us the importance of kindness and patience. Dad, with his perseverance and hard work, always showed an 
+                  example of how to achieve his goals. My brothers are funny and inquisitive, they always find ways to make every day interesting and exciting.
+                </p>
+              </div>
+            </div>
+
+           <section class="family-carousel">
+            <div class="slides">
+              <div class="slide">
+                <div class="description">
+                  <h2>Almas</h2>
+                  <p>My dad is an example of perseverance and hard work. I am always ready to provide support and wise advice. 
+                    Thanks to his leadership qualities and patience, our family has been through many trials. He has always been 
+                    a support and inspiration, helping me on my life path.</p>
+                </div>
+                <div class="photo">
+                  <img src="img/dad.webp" alt="Dad">
+                </div>
+              </div>
+              
+              <div class="slide">
+                <div class="description">
+                  <h2>Gulsara</h2>
+                  <p>My mother is the personification of love and care. She is always there, regardless of the situation, and always 
+                    knows how to support in difficult times. Her strength and kindness help our family stay united and united. She 
+                    inspires me to be better every day.</p>
+                </div>
+                <div class="photo">
+                  <img src="img/mom.webp" alt="Mom">
+                </div>
+              </div>
+          
+              <div class="slide">
+                <div class="description">
+                  <h2>Miras</h2>
+                  <p>My younger brother is a man with great potential and determination. He charges us all with energy and positivity, 
+                    is always ready to support and share his interesting ideas. His perseverance and thirst for new knowledge help him 
+                    achieve success in his endeavors.</p>
+                </div>
+                <div class="photo">
+                  <img src="img/brother.webp" alt="First brother">
+                </div>
+              </div>
+          
+              <div class="slide">
+                <div class="description">
+                  <h2>Dastan</h2>
+                  <p>My youngest brother is a true optimist and an inexhaustible source of inspiration for our family. Despite his age, 
+                    he shows maturity and perseverance that are admirable. His creative approach to life helps us see the world from a
+                     new perspective.</p>
+                </div>
+                <div class="photo">
+                  <img src="img/brother2.webp" alt="Second brother">
+                </div>
+              </div>
+          
+              <div class="slide">
+                <div class="description">
+                  <h2>Adilet</h2>
+                  <p>I’m always looking to grow in both my personal and professional life. I embrace challenges that help me improve and learn. 
+                    Self-development is key to my approach, and I’m always working on refining my skills and gaining new knowledge. This keeps me
+                     motivated to achieve more in all areas of life.</p>
+                </div>
+                <div class="photo">
+                  <img src="img/adilet-family.jpg" alt="Adilet">
+                </div>
+              </div>
+            </div>
+          
+            <div class="carousel-controls">
+              <button id="prevButton" class="carousel-button">Left</button>
+              <button id="nextButton" class="carousel-button">Right</button>
+          </div>
+          </section>
+          </div>
+        </div>
+      </div>
+  </main>
+  
+  <script>
+    const closeBtn = document.getElementById('close-btn');
+    const hamburger = document.getElementById('hamburger');
+    const sidebar = document.getElementById('sidebar');
+
+    hamburger.addEventListener('click', () => {
+        sidebar.classList.toggle('active');
+    });
+
+    closeBtn.addEventListener('click', () => {
+        sidebar.classList.remove('active');
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+    const slides = document.querySelector('.slides');
+    const slideElements = document.querySelectorAll('.slide');
+    const prevButton = document.getElementById('prevButton');
+    const nextButton = document.getElementById('nextButton');
+    let currentSlide = 0;
+    const totalSlides = slideElements.length;
+
+    
+    function getSlideWidth() {
+        return slideElements[0].clientWidth; 
+    }
+
+    prevButton.addEventListener('click', () => {
+        if (currentSlide > 0) {
+            currentSlide--;
+        } else {
+            currentSlide = totalSlides - 1; 
+        }
+        updateSlidePosition();
+    });
+
+    nextButton.addEventListener('click', () => {
+        if (currentSlide < totalSlides - 1) {
+            currentSlide++;
+        } else {
+            currentSlide = 0; 
+        }
+        updateSlidePosition();
+    });
+
+    function updateSlidePosition() {
+        const slideWidth = getSlideWidth(); 
+        slides.style.transform = `translateX(-${slideWidth * currentSlide}px)`; 
+      }
+    window.addEventListener('resize', updateSlidePosition);
+    });
+  </script>
+
+<footer class="footer">
+  <div class="wrapper">
+    <p class="footer-text">&copy; Aitzhan Adilet, 2024. All rights reserved. Confidentiality is respected.</p>
+  </div>
+</footer>
+</body>
+</html>
